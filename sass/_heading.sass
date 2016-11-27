@@ -10,13 +10,13 @@
 
 	.container
 		position: absolute
-		top: 30%
+		top: 15%
 		right: 0
 		left: 0
 		text-align: center
 
 		p
-			font-family: montserrat-light,
+			font-family: montserrat-light
 			font-size: $info--font--size
 			line-height: $info--line--height
 			color: $color--info--paragraph
@@ -51,66 +51,158 @@
 	max-width: 1200px
 	margin: 0 auto
 
+.nav>li>a
+	display: block
+	width: auto
+
+.navbar
+	margin: 0
+
 .navbar-default
 	font-family: montserrat-regular
 	border: none
-	background-color: transparent
-	position: absolute
-	top: 0
-	right: 0
-	left: 0
-	z-index: 1
-	margin: 0
-	padding: 0
-	padding-top: 20px
+	background-color: #242424
 
 	button
-		height: auto
-		line-height: $nav--height - 50px
-		height: 50px
-		margin-left: 40px
 		background-color: $color--greenlawn
-		border-radius: 8px
-		border: none
-		padding: 10px 20px
 		transition: .4s linear
+		border: transparent
 
 	.navbar-nav
-		display: flex
-		align-items: center
 		float: right
 		height: $nav--height
-
 		li
-			line-height: $nav--height
-			margin-left: 25px
-			margin-right: 3px
+			text-align: center
+			padding: calc(25px / 2) 3px
+
 			&:hover>a
 				border: solid 1px $color--greenlawn
 				color: $color--greenlawn
-				padding: 10px 14px
-				border-radius: 30px
-
 			a
+				transition: .2s linear
 				color: white
+				border: 1px solid transparent
+				border-top-left-radius: 25% 50%;
+				border-top-right-radius: 25% 50%;
+				border-bottom-right-radius: 25% 50%;
+				border-bottom-left-radius: 25% 50%;
 
 		li:last-of-type
-			&:hover
-				button, a		
-					background-color: $color--greenlawn--hover
-					text-decoration: none
-			a
-				transition: .4s linear		
-		
+			padding: calc(37px / 2) 0
+			margin-left: 5px
 
+			&:hover
+				button
+					background-color: $color--greenlawn--hover
+			a
+				transition: .4s linear
+				text-decoration: none
+				background-color: transparent
+
+			button
+				border-radius: 8px
+				border: none
+				padding: 10px 15px
 
 	.navbar-brand
 		height: $nav--height
 		line-height: $nav--height
 
+.in, .collapsing
+	.navbar-nav
+		height: auto
 
 	img
 		transform: scale(0.7)
 
 span
-	color: $color--greenlawn		
+	color: $color--greenlawn
+
+.navbar-toggle .collapsed, .navbar-toggle
+	margin: 22.5px 10px
+
+.navbar-default .navbar-toggle .icon-bar
+	background-color: white
+
+.navbar-default .navbar-toggle
+	&:hover
+		background-color: $color--greenlawn--hover	
+	&:focus
+		background-color: $color--greenlawn--hover
+
+@media (max-width: 921px)
+	.navbar-header
+		float: none
+
+	.navbar-toggle 
+		display: block
+
+	.navbar-collapse 
+		border-top: 1px solid transparent
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+
+	.navbar-collapse.collapse 
+		display: none!important
+
+	.navbar-nav 
+		float: none!important
+		margin: 7.5px -15px
+
+	.navbar-nav>li 
+		float: none
+
+	.navbar-nav>li>a 
+		padding-top: 10px
+		padding-bottom: 10px
+		display: inline-block
+		width: 70%
+
+	.navbar-text 
+		float: none
+		margin: 15px 0
+
+	.navbar-collapse.collapse.in
+		display: block!important
+
+	.collapsing 
+		overflow: hidden!important
+
+	.navbar-default .navbar-nav li:hover > a
+		border-top-left-radius: 5% 50%;
+		border-top-right-radius: 5% 50%;
+		border-bottom-right-radius: 5% 50%;
+		border-bottom-left-radius: 5% 50%;
+
+
+@media (min-width: 768px) and (min-width: 426px)
+	.navbar
+		border-radius: 0
+
+@media (max-width: 985px)
+	.jumbotron .container
+		top: 4%
+	.jumbotron .container p
+		width: 70%
+		padding-bottom: 2px
+
+	.jumbotron .container p:last-of-type
+		margin-top: 5px
+
+	.jumbotron .container button
+		margin-top: 0
+		transform: scale(0.7)
+		&:hover
+			margin-top: 0
+			transform: scale(0.7)
+
+@media (max-width: 425px)
+	.navbar-brand>img
+		width: 220px
+	.navbar-brand
+		padding-top: 18px
+		padding-bottom: 12px
+	.jumbotron>img
+		width: auto
+		height: 100vh
+	.jumbotron
+		overflow: hidden

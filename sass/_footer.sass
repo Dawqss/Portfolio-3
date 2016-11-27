@@ -3,7 +3,11 @@ footer
 	text-align: center
 	font-size: $info--font--size
 
+	.row
+		padding-top: 20px
+
 	ul
+		padding: 20px
 		margin: 0 4px
 
 		li
@@ -26,3 +30,10 @@ footer
 
 	span
 		font-weight: 700
+
+	@media (max-width: 425px)
+		ul 
+			li
+				margin: 5px
+		span
+			font-size: 18px

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-EN">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
 		<title>Start up Company</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header>
@@ -27,10 +27,10 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
-			        <li><a href="#">About Us</a></li>
-			        <li><a href="#">Why Us?</a></li>
-			        <li><a href="#">Packages</a></li>
-			        <li><a href="#">Contact</a></li>
+			        <li><a href="#aboutus">About Us</a></li>
+			        <li><a href="#overview">Why Us?</a></li>
+			        <li><a href="#packages">Packages</a></li>
+			        <li><a href="#contact">Contact</a></li>
 			        <li><button><a href="tel:+08789873356">Call us: +08 789 873 356</a></button></li>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
@@ -55,7 +55,7 @@
 					</div>
 				</div>
 				<div class="row">
-				  <div class="col-s-6 col-m-4 col-4">
+				  <div class="col-4 col-xs-12">
 				    <div class="thumbnail">
 				      <img src="img/rakieta.png" alt="...">
 				      <div class="caption">
@@ -63,11 +63,11 @@
 				        <h4>starter</h4>
 				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 				        <h5><span>99$</span></h5>
-				        <p><a href="#" class="btn btn-primary" role="button">Try It Now</a></p>
+				        <a href="#" class="btn btn-primary" role="button">Try It Now</a>
 				      </div>
 				    </div>
 				  </div>
-				  <div class="col-s-6 col-m-4 col-4">
+				  <div class="col-4 col-xs-12">
 				    <div class="thumbnail">
 				      <img src="img/puchar.png" alt="...">
 				      <div class="caption">
@@ -75,11 +75,11 @@
 				        <h4>hero</h4>
 				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 				        <h5><span>199$</span></h5>
-				        <p><a href="#" class="btn btn-primary" role="button">Try It Now</a></p>
+				        <a href="#" class="btn btn-primary" role="button">Try It Now</a>
 				      </div>
 				    </div>
 				  </div>
-				  <div class="col-s-6 col-m-4 col-4">
+				  <div class="col-4 col-xs-12">
 				    <div class="thumbnail">
 				      <img src="img/medal.png" alt="...">
 				      <div class="caption">
@@ -87,7 +87,7 @@
 				        <h4>deluxe</h4>
 				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
 				        <h5><span>299$</span></h5>
-				        <p><a href="#" class="btn btn-primary" role="button">Try It Now</a></p>
+				        <a href="#" class="btn btn-primary" role="button">Try It Now</a>
 				      </div>
 				    </div>
 				  </div>
@@ -104,34 +104,32 @@
 				<h2>We offer you a lot of advantages</h2>
 				<p class="info--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
 				<div class="row">
-				  <div class="col-xs-6 col-m-4 col-4">
+				  <div class="col-xs-6 col-4">
 				      <img src="img/horse.png" alt="...">
 				      <p>best strategies</p>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 				  </div>
-				  <div class="col-xs-6 col-m-4 col-4">
+				  <div class="col-xs-6 col-4">
 				      <img src="img/moneybag.png" alt="...">
 				      <p>real funding</p>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 				  </div>
-				  <div class="col-xs-6 col-m-4 col-4">			    
+				  <div class="col-xs-6 col-4">			    
 				      <img src="img/grid.png" alt="...">
 				      <p>adequat planning</p>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 				  </div>
-				</div>
-				<div class="row">
-				  <div class="col-xs-6 col-m-4 col-4">			    
+				  <div class="col-xs-6 col-4">			    
 				      <img src="img/horse.png" alt="...">
 				      <p>best strategies</p>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 				  </div>
-				  <div class="col-xs-6 col-m-4 col-4">
+				  <div class="col-xs-6 col-4">
 				      <img src="img/moneybag.png" alt="...">
 				      <p>real funding</p>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 				  </div>
-				  <div class="col-xs-6 col-m-4 col-4">
+				  <div class="col-xs-6 col-4">
 				      <img src="img/grid.png" alt="...">
 				      <p>adequat planning</p>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
@@ -226,16 +224,14 @@
 								<img src="img/check.png">
 							</td>
 						</tr>
-	    			</tbody>
-	  			</table>
-	  			<table class="table table-default">
-	    			<thead >
+						</tbody>
+						<thead>
+							<tr>
+		    					<td>Special Accomplishment</td>
+		    				</tr>
+	    				</thead>
+	    				<tbody>
 	    				<tr>
-	    					<td>Special Accomplishment</td>
-	    				</tr>
-	    			</thead>
-	    			<tbody>
-						<tr>
 							<td>
 								Point 1
 							</td>
@@ -281,7 +277,7 @@
 				<h2>Our satisfied clients</h2>
 				<p class="info--paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 				<div class="row">
-					<div class="col-12"> 
+					<div class="col-12" id="images"> 
 						<img src="img/techcrunch.png">
 						<img src="img/gizmodo.png">
 						<img src="img/informationweek.png">
@@ -291,7 +287,7 @@
 				</div>
 			</div>
 		</section>
-		<footer>
+		<footer id="contact">
 			<div class="container">
 				<ul>
 					<li><a href="#">About</a></li>

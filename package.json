@@ -1,0 +1,26 @@
+{
+  "name": "upsite",
+  "version": "1.0.0",
+  "description": "third site",
+  "main": "index.js",
+  "scripts": {
+    "test": "ibibi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github,com/dawqss/startupsite.git"
+  },
+  "keywords": [
+    "startup",
+    "site",
+    "wyrkowski"
+  ],
+  "author": "Dawid Wyrkowski",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
